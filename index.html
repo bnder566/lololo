@@ -11,14 +11,13 @@
             padding: 0;
             background: #f9f9f9;
             direction: rtl;
+            text-align: center;
         }
 
-        /* الشريط العلوي */
         header {
             background: linear-gradient(to left, #3498db, #2ecc71);
             color: white;
             padding: 20px;
-            text-align: center;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             position: relative;
         }
@@ -41,7 +40,6 @@
             text-decoration: underline;
         }
 
-        /* صورة الطفلة */
         .header-image {
             position: absolute;
             left: 20px;
@@ -54,10 +52,31 @@
             box-shadow: 0 0 5px rgba(0,0,0,0.2);
         }
 
-        /* المحتوى */
+        .buttons {
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .buttons a {
+            background-color: #2980b9;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #21618c;
+        }
+
         .container {
             padding: 30px;
-            text-align: center;
         }
 
         .services {
@@ -85,11 +104,9 @@
             color: #2980b9;
         }
 
-        /* الشريط السفلي */
         footer {
             background-color: #2c3e50;
             color: white;
-            text-align: center;
             padding: 15px 10px;
             margin-top: 40px;
         }
@@ -97,7 +114,6 @@
 </head>
 <body>
 
-    <!-- الشريط العلوي -->
     <header>
         <img src="child.jpg" alt="صورة طفلة" class="header-image">
         <div class="logo">🎓 منصة الخدمات الطلابية</div>
@@ -110,7 +126,12 @@
         </nav>
     </header>
 
-    <!-- المحتوى الرئيسي -->
+    <!-- أزرار الوصول -->
+    <div class="buttons">
+        <a href="https://github.com/bnder566/hnin/archive/refs/heads/main.zip" download>⬇️ تحميل المشروع</a>
+        <a href="https://bnder566.github.io/hnin/" target="_blank">🌐 زيارة الموقع</a>
+    </div>
+
     <main class="container">
         <h2>خدماتنا</h2>
         <div class="services">
@@ -133,7 +154,6 @@
         </div>
     </main>
 
-    <!-- الشريط السفلي -->
     <footer>
         <p>&copy; 2025 منصة الخدمات الطلابية - جميع الحقوق محفوظة</p>
         <p>تم التطوير بواسطة بندر 💻</p>
