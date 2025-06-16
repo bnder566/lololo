@@ -1,0 +1,86 @@
+<header class="main-header">
+    <div class="container">
+        <div class="logo">🎓 منصة الخدمات الطلابية</div>
+        <nav class="navbar" id="navbar">
+            <a href="index.html">الرئيسية</a>
+            <a href="services.html">الخدمات</a>
+            <a href="#">السيرة الذاتية</a>
+            <a href="#">المشاريع</a>
+            <a href="#">البحوث</a>
+            <a href="#">الخرائط</a>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+</header>
+
+<style>
+    .main-header {
+        background-color: #2980b9;
+        color: white;
+        padding: 15px 0;
+    }
+
+    .main-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .navbar {
+        display: flex;
+        gap: 15px;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+        color: #ecf0f1;
+    }
+
+    .menu-toggle {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .navbar {
+            display: none;
+            flex-direction: column;
+            background-color: #2980b9;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            width: 200px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .navbar.show {
+            display: flex;
+        }
+
+        .menu-toggle {
+            display: block;
+        }
+    }
+</style>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navbar").classList.toggle("show");
+    }
+</script>
